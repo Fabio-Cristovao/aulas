@@ -1,0 +1,41 @@
+/* DOCUMENTO CSS */
+
+.static {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    position: static;
+}
+
+.relative {
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+.fixed {
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    position: fixed;
+    top: 300px;
+    right: 0;
+}
+
+.absolute {
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+
+.sticky {
+    width: 200px;
+    height: 200px;
+    background-color: fuchsia;
+}

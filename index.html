@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- 
+        HTML == ESTRUTURA
+        CSS  == ESTILO
+        JS   == FUNCIONALIDADE
+
+        OS ELEMENTOS HTML TÊM DOIS TIPOS DE DISPLAY POR DEFEITO -> BLOCK E INLINE
+
+        UX CONSISTENCIA
+    -->
+    
+    <!-- Head informação / metadata / importação dados -->
+
+    <head>
+        <title>A minha primeira página</title>
+        <meta charset="utf-8">
+        <meta description="A minha primeira pagina desenvolvida no curso webdev">
+        <meta keywords="curso,html,css,javascript, web Development, ETIC">
+        <style>
+            .formulario{
+                background-color: rgb(206, 203, 203);
+                border-radius: 10px;
+                margin-left: 400px;
+                width: 400px;
+                padding: 40px;
+                box-shadow: grey;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1> <a href="#lorem">Lorem</a></h1>
+        <h2>texto</h2>
+        <h3>texto</h3>
+        <h4>texto</h4>
+
+        
+
+        <a href="https://www.etic.pt" target="_blank">ETIC</a>
+
+        <br>
+
+        <img src="images/vale-pirineus.jpeg" alt="imagem de um vale nos pirineus" width="300">
+        
+        <ol>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ol>
+
+        <ul>
+            <li>item</li>
+            <li>
+                <ul>
+                    <li><a href="#">item</a></li>
+                    <li><a href="#">item</a></li>
+                    <li><a href="#">item</a></li>
+                    <li><a href="#">item</a></li>
+                </ul>
+            </li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+
+        <audio controls loop > 
+            <source src="audio/audio.mp3" type="audio/mp3">
+        </audio>
+
+        <hr>
+
+        <video controls>
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+
+        <!--
+            <canvas></canvas>
+            <video></video>
+            <audio></audio>
+
+            <div class="nav"></div>
+            <div class="footer></div>
+
+            <nav></nav>
+            <footer></footer>
+
+        -->
+            <div class="formulario">
+                <form action="teste.php" method="post">
+                    <table>
+                        <tr>
+                            <td>Nome:</td>
+                            <td><input type="text" name="nome" placeholder="introduz o teu nome"> </td>
+                        </tr>
+                        <tr>
+                            <td><label for="apelodo">Apelido:</label></td>
+                            <td><input type="text" name="apelido" placeholder="introduz o apelido"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">password</label></td>
+                            <td><input type="password" name="password"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="data">Data:</label></td>
+                            <td><input type="date" name="data"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="genero" value="feminino"><br>
+                                <input type="radio" name="genero" value="masculino"><br>
+                                <input type="radio" name="genero" value="indefinido">
+                            </td>
+                            <td>: Feminino <br>
+                                : Masculino <br>
+                                : Indefinido 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="curso1" value="webdev"><br>
+                                <input type="checkbox" name="curso2" value="webdev"><br>
+                                <input type="checkbox" name="curso3" value="webdev"> 
+                            </td>
+                            <td>
+                                Web Dev <br>
+                                UX/UI Design <br>
+                                Sonoplastia 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ESCOLHE UM DIA:</td>
+                            <td>
+                                <select name="dias" size="1">
+                                    <option value="sat">Sabado</option>
+                                    <option value="sun">Domingo</option>
+                                    <option value="mon" selected>Segunda-feira</option>
+                                    <option value="tue">Terça-feira</option>
+                                    <option value="wen">Quarta-feira</option>
+                                    <option value="thu">Quinta-feira</option>
+                                    <option value="fri">Sexta-feira</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mensagem:</td>
+                            <td><textarea name="texto" style="width: 200px; height: 100px; resize: none;"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Selecione documento:</td>
+                            <td><input type="file"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="reset"></td>
+                            <td><input type="submit" value="submeter"></td>
+                        </tr>
+                        
+
+                    </table>
+
+                </form>
+                <hr>
+
+                <!-- TABELA -->
+                <table >
+                    <tr>
+                        <th>exemplo</th>
+                        <th>exemplo</th>
+                        <th>exemplo</th>
+                    </tr>
+                    <tr>
+                        <td>exemolo</td>
+                        <td>exemolo</td>
+                        <td>exemolo</td>
+                    </tr>
+                    <tr>
+                        <td>exemolo</td>
+                        <td>exemolo</td>
+                        <td>exemolo</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Non semantic HTML5-->
+            <!-- block -->
+            <div></div>
+             
+            <!-- inline -->
+            <span></span>
+
+            <!-- Semantic HTML5 -->
+            <article></article>
+            <aside></aside>
+            <figure></figure>
+            <footer></footer>
+            <header></header>
+            <nav></nav>
+            <section></section>
+
+            <h2 id="lorem">Lorem</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+               Sit, voluptate maiores tempore iure numquam, hic repudiandae 
+               voluptatibus laudantium veritatis assumenda velit, repellat quibusdam 
+               illo ullam quod itaque architecto facilis molestias.
+            </p>
+    
+            <hr>
+    
+            <p>
+                Lorem ipsum dolor sit amet <a href="#">consectetur</a><br>, adipisicing elit. 
+               Esse ipsam eaque dolore laboriosam, id ducimus temporibus, veritatis incidunt quo 
+               fugit, nulla enim? Voluptatem sed distinctio voluptate ea unde doloremque nostrum.
+            </p>
+
+            <script>
+                console.log("ola mundo");
+                //window.alert("janela chata")
+                //window.prompt("ola que idade tens")
+            </script>
+    </body>
+</html>

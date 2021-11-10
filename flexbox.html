@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /*
+        
+            flexbox
+
+            propriedades de um elemento com dosplay:flex
+
+            - flex-direction;
+
+                define a direcao (do stack) dos elementos dentro do container:
+
+                Valores:
+                
+                - after- row (default)
+                - column;
+                - row-reverse;
+                - column-reverse;
+
+            - flex_wrap
+                - define se os leemtnos fazem wrap 
+
+                valores:
+
+                - wrap;
+                - no-wrap (deafult);
+                - wrap-reverse
+
+
+            - flex- flow
+                - mix da regra flex-durection com flex-wrap
+
+                - ex: flex-flow: flex-direction flex-wrap;
+
+
+            - justify-content
+
+                -define o alinhamento dos elementos em flex
+
+                valores:
+
+                - flex-start
+                - flex-end
+                - center
+                - space-around
+                - space-between
+
+
+            - align content
+
+                - define o alinhamento dos elementos flex na vertical
+            - align items
+
+                - define o alinhamento dos elementos flex na vertical
+
+                valores:
+
+                - center
+                - flex-start
+                - flex-end
+
+                
+        
+        
+        
+        */
+            
+
+        .container{
+            display: flex;
+            border: 1px solid red;
+            align-items: flex-end;
+            width: 70%;
+            height: 100vh;
+            margin: 0 auto
+        }
+
+        .container .quadrado{
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: chocolate;
+            
+         }
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="quadrado">1</div>
+        <div class="quadrado">2</div>
+        <div class="quadrado">3</div>
+        <div class="quadrado">4</div>
+        <div class="quadrado">5</div>
+        <div class="quadrado">6</div>
+        
+    </div>
+    
+    
+</body>
+</html>
