@@ -1,0 +1,62 @@
+/* Extra small devices (portrait phones, less than 576px)
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+
+
+.h4-sm.h4-md,.h4-lg,.h4-xlg{
+    display: none; /* mais aconselhado*/
+    visibility: hidden;
+    
+}
+
+.row{
+    border: solid blue;
+}
+
+.container{
+    background-color: red;
+}
+
+.container-fluid{
+    background-color: burlywood;
+}
+@media (min-width: 576px){
+    .titulo1{
+        color: red;
+    }
+    .h4-sm{
+        display: block;
+    }
+}
+    
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .titulo1{
+        color: blue;} 
+    .h4-md{
+            display: block;
+        }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .titulo1{
+        color: yellow;}
+        
+    .h4-lg{
+        display: block;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .titulo1{
+        color: brown;} 
+    
+    .h4-xlg{
+        display: block;
+    }
+}
